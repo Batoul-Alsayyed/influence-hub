@@ -99,3 +99,50 @@ body{
 .register-link p a:hover {
     text-decoration: underline;
 }
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .wrapper {
+        width: 90%; /* Reduce the wrapper width */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .input-box input {
+        font-size: 14px; /* Reduce input font size */
+        padding: 15px 40px 15px 15px; /* Adjust padding */
+    }
+
+    .wrapper h1 {
+        font-size: 28px; /* Adjust the heading size */
+    }
+}
+
+/* For phones and smaller screens */
+@media (max-width: 480px) {
+    .wrapper {
+        width: 95%; /* Take up more of the screen width */
+        padding: 15px; /* Reduce padding */
+    }
+
+    .input-box input {
+        font-size: 12px; /* Reduce font size further */
+        padding: 10px 35px 10px 10px; /* Adjust padding */
+    }
+
+    .remember-forgot {
+        flex-direction: column; /* Stack the checkbox and forgot password link */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .remember-forgot a {
+        margin-top: 10px; /* Add some spacing between elements */
+    }
+
+    .btn {
+        height: 40px; /* Reduce button height */
+        font-size: 14px; /* Adjust button font size */
+    }
+
+    .register-link {
+        font-size: 12px; /* Adjust the font size of the register link */
+    }
+}
